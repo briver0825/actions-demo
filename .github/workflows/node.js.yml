@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   test:
@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - run: npm install 
-    - run: npm test 
-    - run: echo ${{ secrets.MY_SECRET }}
+      - uses: actions/checkout@v2
+      - env:
+        JUEJIN_COOKIE: ${{secrets.JUEJIN_COOKIE}}
+      - run: npm install
+      - run: npm test
+      - run: echo ${{ secrets.MY_SECRET }}
