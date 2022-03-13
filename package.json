@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts":{
-    "test":"node index.js"
+  "scripts": {
+    "test": "node index.js"
   },
   "devDependencies": {},
   "dependencies": {
+    "axios": "^0.26.1",
     "vue": "^3.2.25"
   }
 }
