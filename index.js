@@ -7,4 +7,4 @@ const secret = process.env.MY_SECRET
 //   console.log(data)
 // })()
 
-console.log(secret + 1)
+console.log(parseInt(secret) + 1)
