@@ -13,6 +13,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: hello
       - uses: actions/checkout@v2
       - run: npm install && npm test
