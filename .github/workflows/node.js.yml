@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello world action step
-        uses: actions/checkout@v2
-        run: npm install && npm test
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm test
+      - run: echo ${{ secrets.MY_SECRET }}
