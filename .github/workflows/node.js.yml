@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - env:
-        MY_SECRET: ${{secrets.MY_SECRET}}
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm test
-      - run: echo ${{ secrets.MY_SECRET }}
+      - name: hello
+        uses: actions/checkout@v2
+        run: npm install && npm test
