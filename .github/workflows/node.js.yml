@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - env:
-        JUEJIN_COOKIE: ${{secrets.JUEJIN_COOKIE}}
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm test
