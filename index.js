@@ -1,4 +1,5 @@
 const axios = require("axios")
+const secret = process.env.MY_SECRET
 
 // ;(async () => {
 //   const res = await axios.get("https://www.baidu.com/")
@@ -6,4 +7,4 @@ const axios = require("axios")
 //   console.log(data)
 // })()
 
-console.log("${{ secrets.MY_SECRET }}")
+console.log(secret)
