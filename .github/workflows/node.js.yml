@@ -15,6 +15,4 @@ jobs:
     steps:
       - name: Hello world action step
         uses: actions/checkout@v2
-        env:
-          JUEJIN_COOKIE: ${{secrets.JUEJIN_COOKIE}}
         run: npm install && npm test
