@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - env:
-        JUEJIN_COOKIE: ${{secrets.JUEJIN_COOKIE}}
+        MY_SECRET: ${{secrets.MY_SECRET}}
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm test
