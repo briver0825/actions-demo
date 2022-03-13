@@ -6,16 +6,13 @@ name: Node.js CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   test:
-
+    name: 测试
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - run: npm install 
-    - run: echo 123
-    - run: curl https://www.baidu.com/
+    - run: echo ${{ secrets.MY_SECRET }}
