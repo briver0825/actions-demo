@@ -6,13 +6,13 @@ const secret = process.env.MY_SECRET
 //   const data = res.data
 //   console.log(data)
 // })()
-
+// https://www.jxuspt.com/schoolWebManage/web/pagesClickStatistics/recordClick
 let count = 0
 function run() {
   axios(
     {
       method: "POST",
-      url: "https://www.jxuspt.com/schoolWebManage/web/pagesClickStatistics/recordClick",
+      url: "http://music.xiaozhuclassmate.site/",
       headers: {
         "Referer": 'https://www.jxuspt.com/Z07_ZSJY/rsContent.jsp?newsID=234324&Page=0&size=18&columnId=43',
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
