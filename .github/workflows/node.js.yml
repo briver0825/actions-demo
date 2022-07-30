@@ -18,4 +18,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install && npm test
+  test1:
+    name: 测试1
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test2:
+    name: 测试2
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
       
