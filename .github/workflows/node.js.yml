@@ -32,4 +32,59 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install && npm test
-      
+  test3:
+    name: 测试3
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test4:
+    name: 测试4
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test5:
+    name: 测试5
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test6:
+    name: 测试6
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test7:
+    name: 测试7
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test8:
+    name: 测试8
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test9:
+    name: 测试9
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
+  test10:
+    name: 测试10
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test
